@@ -124,7 +124,7 @@ export default Ember.Component.extend({
       showWeekNumbers: this.get('showWeekNumbers'),
       showDropdowns: this.get('showDropdowns'),
       linkedCalendars: this.get('linkedCalendars'),
-      dateLimit: this.get('dateLimit'),
+      dateLimit: this.get('dateLimit') && JSON.parse(this.get('dateLimit')),
       parentEl: this.get('parentEl')
     };
 
